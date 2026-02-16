@@ -1,0 +1,142 @@
+/* ============================= */
+/* GLOBAL */
+/* ============================= */
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #0F0F0F;
+  color: #EAEAEA;
+}
+
+/* ============================= */
+/* HEADER SECTION */
+/* ============================= */
+
+.gallery-header {
+  padding: 90px 8%;
+  background: linear-gradient(135deg, #023a5a, #023a5a);
+  border-bottom: 1px solid #1F2937;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+/* ROUND LOGO */
+.header-logo {
+  width: 140px;
+  height: 140px;
+  background: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid #FF4D1A;
+  box-shadow: 0 0 40px rgba(255, 77, 26, 0.35);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+/* LOGO IMAGE */
+.header-logo img {
+  width: 148%;
+  transform: scale(1.1) translateX(1px);
+  object-fit: contain;
+}
+
+/* TITLE */
+
+.header-text h1 {
+  color: #F4D35E;
+}
+
+.header-text p {
+  color: #D1D5DB;
+}
+
+/* ============================= */
+/* GALLERY SECTION */
+/* ============================= */
+
+.gallery-container {
+  padding: 100px 8%;
+  background: #0F0F0F;
+}
+
+/* GRID */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+/* CARD STYLE */
+.gallery-item {
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  background: #1A1A1A;
+  transition: 0.4s ease;
+  border: 1px solid #222;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  transition: 0.6s ease;
+}
+
+/* HOVER EFFECT */
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 50px rgba(255, 77, 26, 0.2);
+}
+
+/* ============================= */
+/* LIGHTBOX */
+/* ============================= */
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10,10,10,0.95);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.lightbox img {
+  max-width: 85%;
+  max-height: 85%;
+  border-radius: 12px;
+  animation: zoom 0.3s ease;
+  box-shadow: 0 40px 80px rgba(0,0,0,0.7);
+}
+
+@keyframes zoom {
+  from { transform: scale(0.7); }
+  to { transform: scale(1); }
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-size: 40px;
+  color: #FF4D1A;
+  cursor: pointer;
+}
+
