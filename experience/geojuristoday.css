@@ -23,6 +23,10 @@ body {
   align-items: center;
   gap: 40px;
 }
+.header-desc {
+  color: #ffffff;        /* light color for dark bg */
+  
+}
 
 .header-logo {
   width: 150px;
@@ -39,8 +43,8 @@ body {
 }
 
 .header-logo img {
-  width: 180%;
-  transform: scale(1.1) translateX(3px);
+  width: 100%;
+  transform: scale(1.7) translateX(1px);
   object-fit: contain;
 }
 

@@ -218,37 +218,165 @@ html {
   margin-bottom: 20px;
 }
 
-/* EXPERIENCE CARDS */
+/* ============================= */
+/* EXPERIENCE SECTION */
+/* ============================= */
 
 .experience-image {
+  position: relative;
   height: 100vh;
-  background: url("assets/images/experience.png") center/cover no-repeat;
+  background: url("assets/images/Experience.png") center/cover no-repeat;
+  overflow: hidden;
 }
+
+/* ============================= */
+/* EXPERIENCE CIRCLE (HEADER STYLE) */
+/* ============================= */
+
+.experience-content {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+
+  background: #ffffff;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 5px solid #C2A878;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+
+  overflow: hidden;
+  flex-shrink: 0;
+
+  transition: 0.3s ease;
+  z-index: 2;
+}
+
+/* IMAGE FIX */
+
+/* PERFECT LOGO FIT INSIDE CIRCLE */
+/* PERFECT CENTER FIX */
+.experience-content img {
+  width: 148%;
+  height: auto;
+  object-fit: contain;
+
+  position: relative;
+  top: -15px;   /* 🔥 move UP */
+}
+
+.ieee img {
+  top: -84px;
+}
+
+.engiversee img {
+  top: -84px;
+}
+
+.geojuris img {
+  top: -84px;
+}
+
+.creative img {
+  top: -84px;
+}
+
+.brand img {
+  top: -84px;
+}
+/* ============================= */
+/* HOVER EFFECT */
+/* ============================= */
+
+.experience-content:hover {
+  transform: scale(1.08);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+}
+
+/* ============================= */
+/* POSITIONS (MATCH YOUR DESIGN) */
+/* ============================= */
+
+/* LEFT TOP */
+.ieee {
+  top: 25%;
+  left: 10%;
+  width: 240px;
+  height: 240px;
+}
+
+/* LEFT BOTTOM */
+.engiversee {
+  top: 63%;
+  left: 11%;
+   width: 240px;
+  height: 240px;
+}
+
+/* CENTER BIG */
+.creative {
+  top: 43%;
+  left: 34%;
+  
+  width: 240px;
+  height: 240px;
+}
+
+/* RIGHT TOP */
+.geojuris {
+  top: 25%;
+  right: 17%;
+   width: 240px;
+  height: 240px;
+}
+
+/* RIGHT BOTTOM */
+.brand {
+  top: 64%;
+  right: 17%;
+   width: 240px;
+  height: 240px;
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
 
 @media (max-width: 768px) {
-  .experience-image {
-    height: 70vh;
-    background-position: center top;
+
+  .experience-content {
+    width: 100px;
+    height: 100px;
+  }
+
+  .brand {
+    width: 120px;
+    height: 120px;
+  }
+
+  .ieee {
+    top: 30%;
+    left: 10%;
+  }
+
+  .engiversee {
+    top: 60%;
+    left: 10%;
+  }
+
+  .geojuris {
+    top: 30%;
+    right: 10%;
+  }
+
+  .creative {
+    top: 60%;
+    right: 10%;
   }
 }
-
-.exp-text a {
-  text-decoration: none;
-  color: inherit;
-  display: inline-block;
-  transition: all 0.3s ease;
-  position: relative;
-}
-
-/* HOVER EFFECT */
-.exp-text a:hover {
-  transform: scale(1.08);
-  box-shadow: 0 8px 25px rgba(0, 212, 255, 0.35);
-  background: rgba(255, 255, 255, 0.08);
-  border-radius: 30px;
-}
-
-
 /* PROJECT SECTION BACKGROUND */
 .project-image {
   position: relative;
@@ -286,6 +414,10 @@ html {
   width: 180px;
 }
 
+.motion img {
+  width: 180px;
+}
+
 
 /* Posters (left) */
 .posters {
@@ -301,8 +433,13 @@ html {
 
 /* Logos (right & slightly higher) */
 .logos {
-  top: 20%;
-  right:24%;
+  top: 22%;
+  right:22%;
+}
+
+.motion {
+  top: 12%;
+  right: 4%;   /* push to extreme right */
 }
 
 /* Hover */

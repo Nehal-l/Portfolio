@@ -43,7 +43,7 @@ body {
 /* LOGO IMAGE */
 .header-logo img {
   width: 148%;
-  transform: scale(1.1) translateX(1px);
+  transform: scale(1.1) translateX(-27px);
   object-fit: contain;
 }
 
@@ -55,6 +55,10 @@ body {
 
 .header-text p {
   color: #D1D5DB;
+}
+.header-desc {
+  color: #fae2c7;        /* light color for dark bg */
+  
 }
 
 /* ============================= */

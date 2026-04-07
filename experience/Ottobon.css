@@ -1,20 +1,20 @@
-/* ============================= */
-/* GLOBAL */
-/* ============================= */
+/* =========================
+   ENGIVERSEE PREMIUM GREEN
+========================= */
 
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: #F5EBDD;  /* Cream */
-  color: #2B2B2B;
+  background: #f0ddb0;
+  color: #1F3D2B;
 }
 
-/* ============================= */
-/* HEADER */
-/* ============================= */
+/* =========================
+   HEADER
+========================= */
 
 .gallery-header {
-  background: linear-gradient(135deg, #8C3A2E );
+  background: linear-gradient(135deg, #3d3c1f, #2E5E3E);
   padding: 100px 8%;
 }
 
@@ -25,6 +25,7 @@ body {
 }
 
 /* ROUND LOGO */
+
 .header-logo {
   width: 150px;
   height: 150px;
@@ -33,66 +34,70 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 5px solid #C18A4D;
+  border: 5px solid #C2A878;
   box-shadow: 0 15px 40px rgba(0,0,0,0.25);
   overflow: hidden;
   flex-shrink: 0;
 }
-
-.header-logo img {
-  width: 130%;
-  transform: scale(1.1) translateX(-12px);
-  object-fit: contain;
-}
-
 .header-desc {
-  color: #ffffff;        /* light color for dark bg */
+  color: #f0fac7;        /* light color for dark bg */
   
+}
+.header-logo img {
+  width: 150%;
+  transform: scale(1.1) translateX(-33px);
+  object-fit: contain;
 }
 
 /* TITLE */
 
 .header-text h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 38px;
-  font-weight: 700;
   margin: 0;
-  color: #F5EBDD;
+  font-size: 40px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: #F8F5EE;
+  letter-spacing: 1px;
 }
 
 .header-text p {
-  margin-top: 10px;
+  margin-top: 12px;
   font-size: 14px;
+  color: #EDE6D6;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #E8D6C3;
 }
 
-/* ============================= */
-/* GALLERY SECTION */
-/* ============================= */
+.p {
+ color: #EDE6D6; 
+}
+
+/* =========================
+   GALLERY SECTION
+========================= */
 
 .gallery-container {
-  padding: 100px 8%;
-  background:#C18A4D;
+  padding: 90px 8%;
 }
+
+/* GRID */
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 35px;
 }
 
-/* CARD DESIGN */
+/* CARD STYLE */
 
 .gallery-item {
-  background: #ffffff;
-  border-radius: 18px;
+  background: #F8F5EE;
+  border-radius: 20px;
   overflow: hidden;
+  position: relative;
   cursor: pointer;
-  transition: 0.4s ease;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.08);
-  border: 1px solid rgba(0,0,0,0.05);
+  transition: all 0.4s ease;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.08);
 }
 
 /* IMAGE + VIDEO */
