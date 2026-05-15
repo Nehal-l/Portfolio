@@ -5,8 +5,8 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: #F4F1EA;
-  color: #1E2A38;
+  background: #C69C6D;
+  color: #2A2A2A;
 }
 
 
@@ -15,7 +15,7 @@ body {
 /* ============================= */
 
 .gallery-header {
-  background: linear-gradient(135deg, #1E293B 60%, #f57e39 40%);
+  background: linear-gradient(135deg, #748b2e);
   padding: 100px 8%;
 }
 
@@ -25,13 +25,13 @@ body {
   gap: 40px;
 }
 
-/* TEXT */
+/* TITLE */
 
 .header-text h1 {
   font-family: 'Playfair Display', serif;
   font-size: 38px;
   margin: 0;
-  color: #F4F1EA;
+  color: #FFF8ED;
 }
 
 .header-text p {
@@ -39,7 +39,7 @@ body {
   font-size: 14px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #E7D3B3;
+  color: #F3DCC2;
 }
 
 
@@ -47,14 +47,17 @@ body {
 /* GALLERY */
 /* ============================= */
 
+
 .gallery-container {
   padding: 90px 8%;
 }
 
+/* GRID */
+
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 45px;
+  gap: 35px;
 }
 
 /* CARD STYLE */
@@ -80,11 +83,11 @@ body {
   display: block;
 }
 
-/* HOVER */
+/* PREMIUM HOVER EFFECT */
 
 .gallery-item:hover {
   transform: translateY(-10px) scale(1.02);
-  box-shadow: 0 30px 70px rgba(30,42,56,0.3);
+  box-shadow: 0 30px 70px rgba(0,0,0,0.18);
 }
 
 .gallery-item:hover img,
@@ -92,15 +95,14 @@ body {
   transform: scale(1.08);
 }
 
-/* ============================= */
-/* LIGHTBOX */
-/* ============================= */
-
+/* =========================
+   LIGHTBOX
+========================= */
 
 .lightbox {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.95); /* soft green overlay */
+  background: rgba(20, 60, 40, 0.85); /* soft green overlay */
   display: none;
 
   align-items: center;
@@ -139,6 +141,7 @@ body {
   box-shadow: 0 40px 80px rgba(0,0,0,0.7);
 }
 
+
 /* SMOOTH ZOOM */
 
 @keyframes zoom {
@@ -146,18 +149,22 @@ body {
   to { transform: scale(1); opacity: 1; }
 }
 
+/* CLOSE BUTTON */
 
 .close {
   position: absolute;
-  top: 40px;
-  right: 60px;
-  font-size: 40px;
-  color: #C8A97E;
+  top: 25px;
+  right: 35px;
+  font-size: 35px;
+  color: #ff5c33;
   cursor: pointer;
+  z-index: 10000;
 }
+
 
 .close:hover {
   transform: scale(1.2);
   color: #ffffff;
 }
+
 

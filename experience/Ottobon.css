@@ -44,8 +44,8 @@ body {
   
 }
 .header-logo img {
-  width: 150%;
-  transform: scale(1.1) translateX(-33px);
+  width: 164%;
+  transform: scale(1.1) translateX(-44px);
   object-fit: contain;
 }
 
